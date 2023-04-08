@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@700&display=swap');
+
+/* RESET CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: hsl(0, 0%, 11%);
+  font-size: 17px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* MAIN CSS */
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F0F0F0;
+}
+
+
+.main-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FEFEFF;
+  padding: 2rem;
+  border-radius: 15px 15px 140px 15px;
+  min-width: 600px;
+}
+
+/* RESULT  */
+.con-result {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.con-btn {
+  width: 97%;
+  display: flex;
+  justify-content: end;
+  margin: -20px 20px 20px 20px;
+  align-items: center;
+}
+
+.title-input {
+  font-size: 18px;
+  margin: 0.5rem;
+  color: hsl(0, 1%, 44%);
+}
+
+/* IMPUT */
+.inp {
+  width: 5.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 86%);
+  padding: 15px;
+  font-family: "Poppins";
+  font-size: 16px;
+  transition: all 0.1s ease-in-out;
+}
+
+input:focus {
+  border: 1.6px solid hsl(259, 100%, 65%);
+  outline: hsl(259, 100%, 65%);
+  transform: scale(1.04);
+}
+
+/* BOTON */
+.boton {
+  width: 10%;
+  border-radius: 100%;
+  border: none;
+  padding: 20px 45px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: hsl(259, 100%, 65%);
+  transition: all 0.1s ease-in-out;
+}
+
+.boton:hover {
+  transform: scale(1.04);
+  background-color: hsl(0, 0%, 8%);
+}
+
+/* SALIDA DE DATOS */
+
+#out-years,
+#out-months,
+#out-days {
+  color: hsl(259, 100%, 65%);
+
+
+}
+
+
+.contenedor-fechas {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.line-1 {
+  margin: 5px;
+  width: 100%;
+  height: 2px;
+  background: hsl(0, 0%, 86%);
+}
+
+
+
+.div-output {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  font-size:60px;
+  font-style: italic;
+}
+
+/* ERRORES */
+
+.contenedor-error {
+  visibility: hidden;
+  color: red;
+  display: flex;
+  justify-content: start;
+  width: 95%;
+  font-size: 18px;
+}
+
+/* MEDIA QUERIE */
+
+@media only screen and (max-width: 670px) {
+
+  .main-container {
+
+    padding: 1rem;
+    border-radius: 15px 15px 140px 15px;
+    min-width: 260px;
+  }
+
+  .inp {
+    width: 4.5rem;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .boton {
+    width: 10%;
+    border-radius: 100%;
+    padding: 15px 25px;
+  }
+
+  img {
+    width: 20px;
+  }
+
+  .attribution>p {
+    margin-bottom: 10px;
+    position: relative;
+    right: 30px;
+    font-size: 8px;
+    text-align: start;
+  }
+
+  .con-result p {
+    font-size: 30px;
+  }
+}
+
+/* ATRIBUTION */
+.attribution {
+  margin-top: 60px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
